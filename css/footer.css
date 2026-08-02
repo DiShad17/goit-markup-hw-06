@@ -15,7 +15,7 @@
   align-items: start;
   width: 100%;
   box-sizing: border-box;
-  max-width: 768px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   flex-wrap: wrap;
@@ -26,7 +26,7 @@
   gap: 16px;
   display: flex;
   flex-direction: column;
-  margin-right: 24px;
+  margin-right: 120px;
 }
 
 .footer .logo {
@@ -96,6 +96,26 @@
   .footer .sub-wrapper {
     flex-basis: 100%;
     margin-left: 0;
+  }
+}
+
+/* десктоп */
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer .container {
+    max-width: 1158px;
+  }
+
+  .footer .contant-left {
+    margin-right: 120px;
+  }
+
+  .footer .sub-wrapper {
+    margin-left: auto;
   }
 }
 
@@ -176,7 +196,7 @@
 
   .footer .container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 72px;
     max-width: 320px;
   }
@@ -187,6 +207,7 @@
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+    align-items: center;
   }
 
   .footer .contant-left {
@@ -195,6 +216,11 @@
 
   .footer .socials-wrapper {
     flex-basis: 100%;
+    align-items: center;
+  }
+
+  .footer .sub-wrapper {
+    align-items: center;
   }
 
   .footer .subscribe-form {
@@ -209,11 +235,13 @@
   }
 
   .footer .subscribe-btn {
-    width: 100%;
+    width: auto;
+    min-width: 165px;
   }
 
   .footer .container .footer-text {
     margin-left: 0;
     margin-right: 0;
+    text-align: left;
   }
 }

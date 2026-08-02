@@ -2,6 +2,12 @@
   padding: 96px 0;
 }
 
+@media screen and (min-width: 1158px) {
+  .features {
+    padding: 120px 0;
+  }
+}
+
 .features .container {
   padding: 0 15px;
 }
@@ -55,8 +61,12 @@
   }
 
   .features .container .list .element .sronly-3 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 36px;
+    line-height: 1.11;
+    font-weight: 700;
+  }
+
+  .features .container .list .element p {
     font-weight: 500;
   }
 }
