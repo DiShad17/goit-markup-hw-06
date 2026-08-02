@@ -1,0 +1,77 @@
+.portfolio {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.portfolio h2,
+.portfolio h3 {
+  color: var(--contrast-high-color);
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.portfolio ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio li {
+  max-width: 360px;
+  min-width: 288px;
+}
+
+.portfolio .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 16px;
+  border: 1px solid var(--accent-subtle-color);
+  border-top: none;
+}
+
+.portfolio .card {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio .card:hover {
+  box-sizing: border-box;
+
+  box-shadow:
+    0 2px 1px 0 #2e2f4214,
+    0 1px 1px 0 #2e2f4229,
+    0 1px 6px 0 #2e2f4214;
+}
+
+/*-------- Анимация карточки ----------*/
+
+.card-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-cover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+
+  background-color: var(--brand-default-color);
+  color: var(--surface-default-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  transform: translateY(100%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card-cover-text {
+  transform: translateY(0%);
+}

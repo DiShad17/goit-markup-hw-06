@@ -1,0 +1,152 @@
+:root {
+  --brand-default-color: #4d5ae5;
+  --brand-pressed-color: #404bbf;
+
+  --text-primary-color: #434455;
+  --text-secondary-color: #8e8f99;
+
+  --contrast-high-color: #2e2f42;
+
+  --surface-primary-color: #ffffff;
+  --surface-default-color: #f4f4fd;
+  --surface-hero-color: #2e2f42;
+  --surface-modal-color: #fcfcfc;
+
+  --overlay-modal-color: #2e2f4266;
+
+  --accent-subtle-color: #e7e9fc;
+  --success-color: #31d0aa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary-color);
+  background-color: var(--surface-primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+title,
+p {
+  margin: 0px;
+}
+
+h1,
+title {
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  line-height: 1.11;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-width: 0;
+  border-radius: 4px;
+}
+
+a {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.text-medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.text-small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+img {
+  display: block;
+}
+
+.logo {
+  color: #2e2f42;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  font-family: "Raleway", "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo .accent {
+  color: #4d5ae5;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+p {
+  letter-spacing: 0.02em;
+}
+
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  max-width: 1158px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}

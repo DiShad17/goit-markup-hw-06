@@ -1,0 +1,39 @@
+.features {
+  padding: 120px 0;
+}
+
+.features .container {
+  padding: 0 15px;
+}
+
+.features .container .list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.features .container .list .element {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 264px;
+}
+
+.features .container .list .element .decoration {
+  border: 1px solid var(--text-secondary-color);
+  border-radius: 4px;
+  background-color: var(--surface-default-color);
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features .sronly-2 {
+  color: var(--contrast-high-color);
+  letter-spacing: 0.02em;
+}
+
+.features .sronly-3 {
+  color: var(--contrast-high-color);
+}
