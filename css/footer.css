@@ -6,8 +6,8 @@
 
 .footer {
   display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer .container {
@@ -15,10 +15,9 @@
   align-items: start;
   width: 100%;
   box-sizing: border-box;
-  max-width: 1158px;
+  max-width: 768px;
   padding-left: 15px;
   padding-right: 15px;
-
   flex-wrap: wrap;
 }
 
@@ -27,7 +26,7 @@
   gap: 16px;
   display: flex;
   flex-direction: column;
-  margin-right: 120px;
+  margin-right: 24px;
 }
 
 .footer .logo {
@@ -87,14 +86,15 @@
   flex-direction: column;
 }
 
-/* мобилки и планшет */
-@media screen and (max-width: 1157px) {
+/* планшеты */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer .container {
-    gap: 24px;
+    max-width: 768px;
+    gap: 72px;
   }
 
   .footer .sub-wrapper {
-    flex-basis: 100%; 
+    flex-basis: 100%;
     margin-left: 0;
   }
 }
@@ -167,24 +167,53 @@
   fill: #ffffff;
 }
 
-
 /* только мобилки */
 @media screen and (max-width: 767px) {
-   .footer .socials-wrapper {
-    flex-basis: 100%; 
-    margin-left: 0;
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 72px;
+    max-width: 320px;
   }
 
-  .footer .container * {
-    margin-left: auto;
-    margin-right: auto;
+  .footer .contant-left,
+  .footer .socials-wrapper,
+  .footer .sub-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .footer .contant-left {
+    align-items: flex-start;
+  }
+
+  .footer .socials-wrapper {
+    flex-basis: 100%;
   }
 
   .footer .subscribe-form {
     flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .footer .subscribe-input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer .subscribe-btn {
+    width: 100%;
+  }
+
+  .footer .container .footer-text {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

@@ -123,7 +123,12 @@
           <h2>Our Team</h2>
           <ul class="list">
             <li class="card">
-              <img src="./images/team-1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="card-content">
                 <h3>Mark Guerrero</h3>
                 <p>Product Designer</p>
@@ -178,7 +183,12 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/team-2.jpg" alt="Tom Ford" width="264" />
+              <img
+                src="./images/team-2.jpg"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="card-content">
                 <h3>Tom Ford</h3>
                 <p>Frontend Developer</p>
@@ -233,7 +243,12 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/team-3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                src="./images/team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="card-content">
                 <h3>Camila Garcia</h3>
                 <p>Marketing</p>
@@ -288,7 +303,12 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/team-4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                src="./images/team-4.jpg"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="card-content">
                 <h3>Daniel Wilson</h3>
                 <p>UI Designer</p>
@@ -354,6 +374,10 @@
               <div class="card-cover-wrap">
                 <img
                   src="./images/portfolio.jpg"
+                  srcset="
+                    ./images/portfolio.jpg    1x,
+                    ./images/portfolio@2x.jpg 2x
+                  "
                   alt="Banking app"
                   width="360"
                 />
@@ -372,6 +396,10 @@
               <div class="card-cover-wrap">
                 <img
                   src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio-1@2x.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -390,6 +418,10 @@
               <div class="card-cover-wrap">
                 <img
                   src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio-2@2x.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                 />
@@ -409,6 +441,10 @@
               <div class="card-cover-wrap">
                 <img
                   src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio-3@2x.jpg 2x
+                  "
                   alt="Taxi Service"
                   width="360"
                 />
@@ -428,6 +464,10 @@
               <div class="card-cover-wrap">
                 <img
                   src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio-4@2x.jpg 2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -447,6 +487,10 @@
               <div class="card-cover-wrap">
                 <img
                   src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio-5.jpg    1x,
+                    ./images/portfolio-5@2x.jpg 2x
+                  "
                   alt="Online Courses"
                   width="360"
                 />
@@ -641,83 +685,85 @@
 
     <!-- Мобильное меню. Добавьте класс is-open, чтобы показать модалку -->
     <div class="mobile-menu" id="mobile-menu">
-      <!-- Кнопка закрытия -->
-      <button class="mobile-menu-close" type="button">
-        <svg class="mobile-menu-close-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
+      <div class="mobile-menu-inner">
+        <!-- Кнопка закрытия -->
+        <button class="mobile-menu-close" type="button">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
-      <!-- Навигация -->
-      <nav class="mobile-nav">
-        <ul class="mobile-nav-list list">
-          <li class="mobile-nav-item">
-            <a href="./index.html" class="mobile-nav-link link current"
-              >Studio</a
-            >
-          </li>
-          <li class="mobile-nav-item">
-            <a href="./portfolio.html" class="mobile-nav-link link"
-              >Portfolio</a
-            >
-          </li>
-          <li class="mobile-nav-item">
-            <a href="#contacts" class="mobile-nav-link link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Нижняя часть с контактами и соцсетями -->
-      <div class="mobile-menu-bottom">
-        <address class="mobile-contacts">
-          <ul class="mobile-contacts-list list">
-            <li class="mobile-contacts-item">
-              <a
-                href="tel:+110001111111"
-                class="mobile-contacts-link link accent"
-                >+11 (000) 111-11-11</a
+        <!-- Навигация -->
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list list">
+            <li class="mobile-nav-item">
+              <a href="./index.html" class="mobile-nav-link link current"
+                >Studio</a
               >
             </li>
-            <li class="mobile-contacts-item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="mobile-contacts-link link"
-                >info@devstudio.com</a
+            <li class="mobile-nav-item">
+              <a href="./portfolio.html" class="mobile-nav-link link"
+                >Portfolio</a
               >
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#contacts" class="mobile-nav-link link">Contacts</a>
             </li>
           </ul>
-        </address>
+        </nav>
 
-        <ul class="mobile-socials list">
-          <li class="mobile-socials-item">
-            <a href="#" class="mobile-socials-link link">
-              <svg class="mobile-socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-socials-item">
-            <a href="#" class="mobile-socials-link link">
-              <svg class="mobile-socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-socials-item">
-            <a href="#" class="mobile-socials-link link">
-              <svg class="mobile-socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-socials-item">
-            <a href="#" class="mobile-socials-link link">
-              <svg class="mobile-socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <!-- Нижняя часть с контактами и соцсетями -->
+        <div class="mobile-menu-bottom">
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list list">
+              <li class="mobile-contacts-item">
+                <a
+                  href="tel:+110001111111"
+                  class="mobile-contacts-link link accent"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contacts-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-socials list">
+            <li class="mobile-socials-item">
+              <a href="#" class="mobile-socials-link link">
+                <svg class="mobile-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a href="#" class="mobile-socials-link link">
+                <svg class="mobile-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a href="#" class="mobile-socials-link link">
+                <svg class="mobile-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a href="#" class="mobile-socials-link link">
+                <svg class="mobile-socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

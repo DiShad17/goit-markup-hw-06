@@ -47,6 +47,11 @@
 @media screen and (max-width: 1157px) {
   .header .navul {
     margin-left: 120px;
+    margin-right: 0;
+  }
+
+  .header .addrul {
+    margin-left: auto;
   }
 }
 
@@ -136,7 +141,7 @@
 
 /* только мобилки */
 @media screen and (max-width: 767px) {
-.header .addr-link {
+  .header .addr-link {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;

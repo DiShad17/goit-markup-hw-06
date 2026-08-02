@@ -1,5 +1,5 @@
 .features {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .features .container {
@@ -38,19 +38,16 @@
   color: var(--contrast-high-color);
 }
 
-/* мобилки */
-@media screen and (max-width: 767px) {
-  .sronly-3 {
-    text-align: center;
-  }
-}
-
-/* мобилки и планшет */
+/* планшеты и мобильные */
 @media screen and (max-width: 1157px) {
+  .features {
+    padding: 96px 0;
+  }
+
   .features .container .list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .features .container .list .element .decoration {
@@ -62,19 +59,33 @@
     line-height: 24px;
     font-weight: 500;
   }
-
-  .features .container .list .element p {
-    font-weight: 500;
-  }
-  
 }
 
+/* мобильные */
 @media screen and (max-width: 767px) {
+  .features {
+    padding: 96px 0;
+  }
+
   .sronly-3 {
     text-align: center;
   }
 
   .features .container .list {
     grid-template-columns: 1fr;
+    gap: 72px;
+  }
+}
+
+/* десктоп */
+@media screen and (min-width: 1158px) {
+  .features .container .list .element p {
+    font-weight: 400;
+  }
+
+  .features .container .list .element .sronly-3 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
   }
 }
