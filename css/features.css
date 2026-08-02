@@ -37,3 +37,44 @@
 .features .sronly-3 {
   color: var(--contrast-high-color);
 }
+
+/* мобилки */
+@media screen and (max-width: 767px) {
+  .sronly-3 {
+    text-align: center;
+  }
+}
+
+/* мобилки и планшет */
+@media screen and (max-width: 1157px) {
+  .features .container .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .features .container .list .element .decoration {
+    display: none;
+  }
+
+  .features .container .list .element .sronly-3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .features .container .list .element p {
+    font-weight: 500;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .sronly-3 {
+    text-align: center;
+  }
+
+  .features .container .list {
+    grid-template-columns: 1fr;
+  }
+}

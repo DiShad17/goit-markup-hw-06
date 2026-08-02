@@ -12,6 +12,32 @@
   flex-direction: row;
   /* justify-content: space-between; */
 }
+
+/* только мобилки */
+@media screen and (max-width: 767px) {
+  .header .container nav,
+  .header .container address {
+    display: none;
+  }
+
+    .header .container .logo {
+    padding: 16px 0;
+  }
+}
+
+/* всё кроме мобилок */
+@media screen and (min-width: 768px) {
+  .header .container .burger {
+    display: none;
+  }
+}
+
+.header .container .burger {
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+}
+
 .header .navul {
   margin-left: 76px;
   margin-right: 340px;

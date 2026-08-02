@@ -46,6 +46,10 @@
             </li>
           </ul>
         </address>
+        <div class="burger">
+          <svg class="icon" width="24" height="24" fill="none">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
       </div>
     </header>
 
@@ -532,7 +536,7 @@
     </footer>
 
     <!-- Бекдроп (фон). Добавьте класс is-open, чтобы показать модалку -->
-    <div id="modal" class="backdrop is-open">
+    <div id="modal" class="backdrop">
       <div class="modal">
         <!-- Кнопка закрытия -->
         <button type="button" class="modal-close-btn">
@@ -631,6 +635,88 @@
           <!-- Кнопка отправки -->
           <button type="submit" class="modal-submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <!-- Мобильное меню. Добавьте класс is-open, чтобы показать модалку -->
+    <div class="mobile-menu" id="mobile-menu">
+      <!-- Кнопка закрытия -->
+      <button class="mobile-menu-close" type="button">
+        <svg class="mobile-menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <!-- Навигация -->
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav-item">
+            <a href="./index.html" class="mobile-nav-link link current"
+              >Studio</a
+            >
+          </li>
+          <li class="mobile-nav-item">
+            <a href="./portfolio.html" class="mobile-nav-link link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#contacts" class="mobile-nav-link link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Нижняя часть с контактами и соцсетями -->
+      <div class="mobile-menu-bottom">
+        <address class="mobile-contacts">
+          <ul class="mobile-contacts-list list">
+            <li class="mobile-contacts-item">
+              <a
+                href="tel:+110001111111"
+                class="mobile-contacts-link link accent"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-contacts-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-contacts-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-socials list">
+          <li class="mobile-socials-item">
+            <a href="#" class="mobile-socials-link link">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-socials-item">
+            <a href="#" class="mobile-socials-link link">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-socials-item">
+            <a href="#" class="mobile-socials-link link">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-socials-item">
+            <a href="#" class="mobile-socials-link link">
+              <svg class="mobile-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

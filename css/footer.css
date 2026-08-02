@@ -18,6 +18,8 @@
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
+
+  flex-wrap: wrap;
 }
 
 .footer .contant-left {
@@ -83,6 +85,18 @@
   display: flex;
   gap: 16px;
   flex-direction: column;
+}
+
+/* мобилки и планшет */
+@media screen and (max-width: 1157px) {
+  .footer .container {
+    gap: 24px;
+  }
+
+  .footer .sub-wrapper {
+    flex-basis: 100%; 
+    margin-left: 0;
+  }
 }
 
 .footer .subscribe-form {
@@ -151,4 +165,26 @@
 
 .footer .subscribe-icon {
   fill: #ffffff;
+}
+
+
+/* только мобилки */
+@media screen and (max-width: 767px) {
+   .footer .socials-wrapper {
+    flex-basis: 100%; 
+    margin-left: 0;
+  }
+
+  .footer .container {
+    gap: 72px;
+  }
+
+  .footer .container * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer .subscribe-form {
+    flex-direction: column;
+  }
 }

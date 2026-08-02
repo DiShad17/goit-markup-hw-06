@@ -15,6 +15,13 @@
   gap: 24px;
 }
 
+/* мобилки и планшет */
+@media screen and (max-width: 1157px) {
+  .team .container .list {
+    flex-wrap: wrap;
+  }
+}
+
 .team h2,
 .team h3 {
   color: var(--surface-hero-color);

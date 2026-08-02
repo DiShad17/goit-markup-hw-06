@@ -19,6 +19,13 @@
   gap: 48px 24px;
 }
 
+/* мобилки и планшет */
+@media screen and (max-width: 1157px) {
+  .portfolio ul {
+    flex-wrap: wrap;
+  }
+}
+
 .portfolio li {
   max-width: 360px;
   min-width: 288px;
